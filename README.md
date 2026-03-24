@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # =========================
-# 📘 Guia básico Git (Bash)
+# 📘 Guia Básico de Git (Bash)
 # =========================
 
 echo "📂 Navegação entre pastas"
