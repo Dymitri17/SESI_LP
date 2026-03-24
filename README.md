@@ -1,4 +1,6 @@
-#!/bin/bash
+
+# Guia Básico de Git (Bash)
+
 
 # =========================
 # 📘 Guia Básico de Git (Bash)
@@ -10,9 +12,11 @@ cd ..            # voltar uma pasta
 cd /             # ir para raiz
 
 echo "⚙️ Configuração do Git (primeira vez)"
+
 ```
 git config --global user.name "Seu Nome"
 ```
+
 git config --global user.email "seu@email.com"
 git config --list
 
