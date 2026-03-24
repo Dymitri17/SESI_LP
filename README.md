@@ -1,62 +1,41 @@
- O que é Git Bash / Terminal?
-Terminal: lugar onde você digita comandos
-Git Bash: terminal no Windows que permite usar comandos estilo Linux + Git
- Você controla arquivos e projetos só com texto (comandos)
+#!/bin/bash
 
- Comando básico de navegação
-cd nome_pasta → entra na pasta
-cd .. → volta
-cd / → vai para raiz
- Exemplo:
+# =========================
+# 📘 Guia básico Git (Bash)
+# =========================
 
-cd projetos
- Configuração do Git (primeira vez)
-Definir nome
+echo "📂 Navegação entre pastas"
+cd projetos      # entrar na pasta
+cd ..            # voltar uma pasta
+cd /             # ir para raiz
+
+echo "⚙️ Configuração do Git (primeira vez)"
 git config --global user.name "Seu Nome"
-Definir email
 git config --global user.email "seu@email.com"
-Ver configurações
 git config --list
- --global = vale para todos os projetos
 
- Ver status do projeto
+echo "🔍 Ver status do projeto"
 git status
- Mostra:
 
-arquivos modificados
-arquivos novos
-o que vai ser enviado
- Adicionar arquivos
-git add nome_arquivo
- Exemplo:
+echo "➕ Adicionar arquivos"
+git add index.html   # adicionar arquivo específico
+git add .            # adicionar tudo
 
-git add index.html
-Adicionar tudo:
+echo "💾 Commit (salvar alterações)"
+git commit -m "minha alteração"
 
-git add .
- Salvar (commit)
-git commit -m "mensagem"
- É como tirar uma “foto” do projeto
-
- Enviar (push)
-git push
- Envia seus commits para o servidor (ex: GitHub)
-
-Baixar (pull)
+echo "🔄 Atualizar repositório local"
 git pull
- Baixa atualizações do repositório remoto
 
-Fluxo completo 
+echo "🚀 Enviar para o repositório remoto"
+git push
+
+echo "✅ Fluxo completo"
 cd projeto
 git status
 git add .
 git commit -m "minha alteração"
 git pull
 git push
-Resumo 
-cd → navegar
-git status → ver situação
-git add → preparar
-git commit → salvar
-git push → enviar
-git pull → atualizar
+
+echo "🎉 Fim do script"
