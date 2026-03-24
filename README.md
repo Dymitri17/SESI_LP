@@ -1,7 +1,6 @@
 
-# =========================
+
 # 📘 Guia Básico de Git (Bash)
-# =========================
 
 echo "📂 Navegação entre pastas"
 cd projetos      # entrar na pasta
