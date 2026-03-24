@@ -92,4 +92,6 @@ git pull
 git push
 ```
 
+```
 echo "🎉 Fim do script"
+```
