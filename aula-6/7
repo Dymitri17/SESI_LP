@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    int m1[2][2], m2[2][2], resultado[2][2];
+    
+    printf("Digite a primeira matriz 2x2:\n");
+    for(int i=0; i<2; i++){
+        for(int j=0; j<2; j++){
+            printf("Linha %i, Coluna %i: ", i+1, j+1);
+            scanf("%i", &m1[i][j]);
+        }
+    }
+    
+    printf("Digite a segunda matriz 2x2:\n");
+    for(int i=0; i<2; i++){
+        for(int j=0; j<2; j++){
+            printf("Linha %i, Coluna %i: ", i+1, j+1);
+            scanf("%i", &m2[i][j]);
+        }
+    }
+    
+    // Multiplicação
+    for(int i=0; i<2; i++){
+        for(int j=0; j<2; j++){
+            resultado[i][j] = 0;
+            for(int k=0; k<2; k++){
+                resultado[i][j] += m1[i][k] * m2[k][j];
+            }
+        }
+    }
+    
+    printf("\nResultado da multiplicação:\n");
+    for(int i=0; i<2; i++){
+        for(int j=0; j<2; j++){
+            printf("| %i", resultado[i][j]);
+        }
+        printf(" |\n");
+    }
+}

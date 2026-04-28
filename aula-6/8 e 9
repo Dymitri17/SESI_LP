@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main() {
+    int matriz[5][5];
+    
+    printf("Digite os elementos da matriz 5x5:\n");
+    for(int i=0; i<5; i++){
+        for(int j=0; j<5; j++){
+            printf("Linha %i, Coluna %i: ", i+1, j+1);
+            scanf("%i", &matriz[i][j]);
+        }
+    }
+    
+    printf("\nMatriz com negativos substituídos por zero:\n");
+    for(int i=0; i<5; i++){
+        for(int j=0; j<5; j++){
+            if(matriz[i][j] < 0) matriz[i][j] = 0;
+            printf("| %i", matriz[i][j]);
+        }
+        printf(" |\n");
+    }
+}
+
+
